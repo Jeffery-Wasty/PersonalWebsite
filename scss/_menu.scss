@@ -43,8 +43,9 @@
 .menu {
   position: fixed;
   top: 0px;
-  width: 100%;
-  opacity: 0.9;
+  left: 50%;
+  width: 50%;
+  opacity: 1;
   visibility: hidden;
 
   &.show {

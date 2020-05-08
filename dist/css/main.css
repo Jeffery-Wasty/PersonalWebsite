@@ -23,8 +23,9 @@
 .menu {
   position: fixed;
   top: 0px;
-  width: 100%;
-  opacity: 0.9;
+  left: 50%;
+  width: 50%;
+  opacity: 1;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -267,6 +268,9 @@ main {
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
+  .menu {
+    width: 100%;
+    left: 0px; }
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
