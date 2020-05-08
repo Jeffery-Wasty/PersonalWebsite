@@ -311,5 +311,6 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
-  .projects {
+  .projects,
+  .boxes {
     grid-template-columns: 1fr; } }
