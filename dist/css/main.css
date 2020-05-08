@@ -314,5 +314,5 @@ main {
   .projects,
   .boxes {
     grid-template-columns: 1fr; }
-  .boxes div {
+  .boxes {
     width: 80%; } }
