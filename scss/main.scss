@@ -63,6 +63,11 @@ main {
         color: $secondary-color;
         @include easeOut;
       }
+
+      h2 {
+        display: inline;
+        text-align: center;
+      }
     }
   }
 
@@ -161,9 +166,23 @@ main {
   }
 }
 
+// Resume Page
+.resume-container {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-top: 1rem;
+
+  img {
+    width: 75%;
+    margin: auto;
+  }
+}
+
 // Button Styles
 .btn {
-  display: block;
+  display: grid;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
