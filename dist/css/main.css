@@ -315,4 +315,6 @@ main {
   .boxes {
     grid-template-columns: 1fr; }
   .boxes {
-    width: 50%; } }
+    width: 50%; }
+    .boxes div {
+      font-size: 1rem; } }
