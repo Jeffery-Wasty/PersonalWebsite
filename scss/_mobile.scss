@@ -99,4 +99,8 @@
   .boxes {
     grid-template-columns: 1fr;
   }
+
+  .boxes div {
+    width: 80%;
+  }
 }
