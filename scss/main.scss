@@ -81,39 +81,53 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas:
-    'bio-image bio bio'
-    'job1 job2 job3';
+  grid-template-areas: 'bio-image bio bio';
   grid-template-columns: repeat(3, 1fr);
+}
 
-  .bio-image {
-    grid-area: bio-image;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-    max-width: 50%;
-  }
+.bio-image {
+  grid-area: bio-image;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: $secondary-color 3px solid;
+  max-width: 50%;
+}
 
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
 
-  .job1 {
-    grid-area: job1;
-  }
-  .job2 {
-    grid-area: job2;
-  }
-  .job3 {
-    grid-area: job3;
-  }
+.work {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'workTitle workTitle workTitle'
+    'job1 job2 job3';
+}
 
-  .job {
-    background: lighten($color: $primary-color, $amount: 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
-  }
+.workTitle {
+  grid-area: workTitle;
+  margin-top: 5rem;
+  text-align: center;
+  border-top: $secondary-color 1px solid;
+  border-bottom: $secondary-color 1px solid;
+}
+
+.job1 {
+  grid-area: job1;
+}
+.job2 {
+  grid-area: job2;
+}
+.job3 {
+  grid-area: job3;
+}
+
+.job {
+  background: lighten($color: $primary-color, $amount: 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
 }
 
 // Work/Projects
