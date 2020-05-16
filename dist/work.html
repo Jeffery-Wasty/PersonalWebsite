@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
@@ -20,10 +24,10 @@
       </div>
       <nav class="menu">
         <div class="menu-branding">
-            <a href="https://www.instagram.com/jeffdoubleu/"
-              ><div class="portrait"></div
-            ></a>
-          </div>
+          <a href="https://www.instagram.com/jeffdoubleu/"
+            ><div class="portrait"></div
+          ></a>
+        </div>
         <ul class="menu-nav">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -46,7 +50,7 @@
     <main id="work">
       <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
       <div class="projects">
-        <div class="item">
+        <div class="item col">
           <a href="#!">
             <h2>Knowledge Base</h2>
           </a>
@@ -106,10 +110,11 @@
         <div class="item">
           <a href="#!">
             <a href="img/projects/ICBCIT_deck.pdf">
-                <img
-                  src="img/projects/ICBCIT_deck_first.jpg"
-                  alt="Knowledge Base"
-                />
+              <img
+                src="img/projects/ICBCIT_deck_first.jpg"
+                alt="Knowledge Base"
+              />
+            </a>
           </a>
           <a href="#" class="project-link btn-light">
             <i class="fas fa-eye"></i> Project
@@ -119,10 +124,84 @@
           </a>
         </div>
       </div>
+      <div class="project-bundle">
+        <button type="button" class="collapsible">Knowledge Base</button>
+        <div class="content">
+          <p>Lorem ipsum...</p>
+        </div>
+        <button type="button" class="collapsible">Memory Game</button>
+        <div class="content">
+          <p>
+            This game challenges users to track a pattern as it rotates!<br /><br />
+            This game is good for improving sense of direction<br /><br />
+            In Memory Game, the user needs to quickly memorize a group of tiles
+            on a grid. That means remembering their location, and maybe even the
+            shapes they create.<br /><br />
+            The game "challenges a part of your short-term memory called spatial
+            recall — your ability to track location and position within an
+            environment".<br /><br />
+            The game is of type Dynamic game difficulty balancing (adapts with
+            the user skill and gets harder or easier with respect to the user
+            ability)<br /><br />
+            If wrong tiles are pressed the next matrix gets generated with lower
+            number of tiles, or smaller size (a 5X5 matrix with 6 tiles, will
+            turn to a 5X5 matrix with 5 tiles or 5X4 matrix with 6 tiles)<br /><br />
+            if the user successfully clicked all the tiles then the game becomes
+            one step more difficult (a 5X5 matrix with 6 tiles, will turn to a
+            5X5 matrix with 7 tiles or 6X5 matrix with 6 tiles)
+          </p>
+          <div class="preview">
+            <a href="img/projects/AICP_deck.pdf">
+              <img
+                src="img/projects/AICP_deck_first.jpg"
+                alt="Aircraft Image Classification"
+              />
+            </a>
+            <a
+              href="https://github.com/Jeffery-Wasty/MemoryGame"
+              class="btn-dark"
+            >
+              <i class="fab fa-github github-icon"></i> Github
+            </a>
+          </div>
+        </div>
+        <button type="button" class="collapsible">Abalone</button>
+        <div class="content">
+          <p>Lorem ipsum...</p>
+        </div>
+        <button type="button" class="collapsible">
+          Aircraft Image Classification Project
+        </button>
+        <div class="content">
+          <p>Lorem ipsum...</p>
+        </div>
+        <button type="button" class="collapsible">
+          Rate Prediction Through Machine Learning
+        </button>
+        <div class="content">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
     </main>
 
     <footer id="main-footer">Copyright &copy; 2020</footer>
 
     <script src="js/main.js"></script>
+    <script>
+      var coll = document.getElementsByClassName('collapsible');
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+          var content = this.nextElementSibling;
+          if (content.style.display === 'grid') {
+            content.style.display = 'none';
+          } else {
+            content.style.display = 'grid';
+          }
+        });
+      }
+    </script>
   </body>
 </html>
